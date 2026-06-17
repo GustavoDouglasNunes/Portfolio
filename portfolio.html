@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Gustavo</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Exemplo de Media Query customizada se precisar de algo muito específico */
+    @media (max-width: 768px) {
+      .custom-hero-padding {
+        padding-top: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top shadow-lg" data-bs-theme="dark">
+    <div class="container">
+      <!-- Brand e Botões Desktop (ocultos no mobile para não quebrar o layout) -->
+      <div class="d-flex align-items-center gap-2">
+        <a class="navbar-brand fw-bold text-info fs-4 m-0" href="#">Portfólio</a>
+
+        <!-- Visível apenas em telas MD (Desktop) -->
+        <div class="hidden md:flex gap-2">
+          <a href="https://linkedin.com/in/gustavo-nunes-a34133233" target="_blank" class="btn btn-primary btn-sm rounded-pill px-3 d-flex align-items-center gap-2">
+            LinkedIn
+          </a>
+          <a href="https://github.com/GustavoDouglasNunes" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center align-items-center gap-2 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+          <!-- Botões sociais dentro do menu no Mobile -->
+          <li class="nav-item md:hidden">
+            <a href="https://linkedin.com/in/gustavo-nunes-a34133233" class="nav-link text-primary">LinkedIn</a>
+          </li>
+
+          <li class="nav-item">
+            <button onclick="logout()" class="btn btn-danger rounded-pill px-4 w-full md:w-auto">
+              Sair
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <!-- d-flex e flex-column garantem o alinhamento vertical centralizado -->
+  <section id="home" class="min-vh-100 flex flex-col items-center justify-center bg-gradient-to-br from-cyan-600 via-blue-700 to-indigo-900 text-white p-6 text-center">
+    <div class="max-w-4xl">
+      <h1 class="text-4xl md:text-7xl font-bold mb-4 tracking-tight">
+        Gustavo Dev |
+      </h1>
+      <p id="usuarioLogado" class="text-blue-200 mb-3 font-medium uppercase tracking-widest"></p>
+      <p class="text-lg md:text-2xl mb-8 opacity-90">
+        Desenvolvedor Full-Stack e Creator Audiovisual com expertise em UI/UX Design
+      </p>
+      <a href="#projetos" class="btn btn-light btn-lg rounded-pill px-5 shadow-lg transition transform hover:scale-105 ml-4">
+        Ver Projetos
+      </a>
+      <a href="#contato" class="btn btn-light btn-lg rounded-pill px-5 shadow-lg transition transform hover:scale-105 ml-4">
+        Contato
+      </a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-20 px-4">
+    <div class="container mx-auto">
+      <div class="bg-white p-6 md:p-12 rounded-3xl shadow-xl text-center border border-gray-100">
+        <h2 class="text-blue-600 text-3xl md:text-5xl font-extrabold mb-6">
+          Sobre Mim
+        </h2>
+        <p class="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+          Profissional cursando Engenharia de Software, com experiência em suporte N1, expertise em
+          sistemas Linux e Windows, automação de processos e desenvolvimento web. Com um perfil versátil, busco constantemente aprimorar minhas habilidades em <strong>UI/UX Design</strong> e desenvolvimento inovador.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="py-20 bg-gray-50 px-4">
+    <div class="container">
+      <h2 class="text-center text-3xl md:text-5xl font-extrabold text-blue-600 mb-12">
+        Meus Projetos
+      </h2>
+      <div class="row g-4 justify-content-center">
+        <!-- CARD -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 shadow-lg h-100 rounded-4 overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <div class="overflow-hidden">
+              <img src="assets/escape room.png" class="card-img-top hover:scale-110 transition duration-500" alt="Projeto Escape Room">
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <h5 class="fw-bold fs-4 mb-3 text-gray-800">Game Web / Escape Room</h5>
+
+              <!-- Badges com Flexbox para quebra de linha suave -->
+              <div class="flex flex-wrap justify-center gap-2 mb-4">
+                <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold uppercase">HTML5</span>
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold uppercase">CSS3</span>
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold uppercase">JavaScript</span>
+              </div>
+
+              <p class="text-muted mb-4">
+                Desafios interativos e enigmas para testar a lógica dos jogadores diretamente no navegador.
+              </p>
+
+              <div class="mt-auto">
+                <a href="https://escape-room-roan-three.vercel.app/" target="_blank" class="btn btn-primary rounded-pill px-4 py-2 w-30">
+                  Visitar Projeto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-20 px-4">
+    <div class="container">
+      <div class="bg-white p-8 md:p-16 rounded-3xl shadow-xl text-center border border-blue-50">
+        <h2 class="text-blue-600 text-3xl md:text-5xl font-extrabold mb-4">Contato</h2>
+        <p class="text-gray-500 mb-10 text-lg">
+          Disponível para novos projetos e parcerias.
+        </p>
+
+        <!-- Flexbox: Coluna no mobile, Linha no Desktop -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+          <a href="mailto:gustavodouglasnunes@gmail.com" class="btn btn-primary rounded-pill px-5 py-3 shadow w-full md:w-auto">
+            📧 E-mail
+          </a>
+          <a href="https://wa.me/5562999212773" target="_blank" class="btn btn-success rounded-pill px-5 py-3 shadow w-full md:w-auto">
+            💬 WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <p class="opacity-50 text-sm">
+        © 2026 Gustavo Dev — Desenvolvido com Bootstrap & Tailwind
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
