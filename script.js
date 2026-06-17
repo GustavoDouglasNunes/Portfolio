@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Salva dados do usuário no localStorage (Aceita qualquer email e senha válidos)
+      // Salva dados do usuário no localStorage
       localStorage.setItem("usuarioEmail", email.value.trim());
 
       // Redireciona para o portfólio
@@ -49,22 +49,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Vincula o botão mostrar senha caso ele exista na página
   const btnSenha = document.getElementById("btnSenha");
   if (btnSenha) {
-    // Removemos o onclick inline do HTML para usar o EventListener padrão do projeto
     btnSenha.addEventListener("click", mostrarSenha);
   }
 });
 
 // ===================== VERIFICAÇÃO DE LOGIN =====================
-// Executa apenas se estivermos na página do portfólio
 if (document.getElementById("usuarioLogado")) {
   const usuarioLogado = document.getElementById("usuarioLogado");
   const usuario = localStorage.getItem("usuarioEmail");
 
   if (!usuario) {
-    window.location.href = "login.html";
+    // CORREÇÃO AQUI: Mudado de login.html para index.html
+    window.location.href = "index.html";
   } else {
     usuarioLogado.textContent = `Usuário logado: ${usuario}`;
   }
@@ -73,5 +71,6 @@ if (document.getElementById("usuarioLogado")) {
 // ===================== LOGOUT =====================
 function logout() {
   localStorage.removeItem("usuarioEmail");
-  window.location.href = "login.html";
+  // CORREÇÃO AQUI: Mudado de login.html para index.html
+  window.location.href = "index.html";
 }
