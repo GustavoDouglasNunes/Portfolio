@@ -87,7 +87,7 @@ seu-projeto/
 1. Fazer upload para repositório GitHub
 2. Ir em Settings → Pages
 3. Selecionar branch main
-4. Seu site estará em: `https://github.com/GustavoDouglasNunes/Portfolio`
+4. Seu site estará em: [Etra aqui]`https://portfolio-two-chi-0bz4hyqdze.vercel.app/`
 
 ## 📝 Notas Importantes
 
