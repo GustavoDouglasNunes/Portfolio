@@ -34,37 +34,12 @@ Portfólio pessoal responsivo com sistema de autenticação via localStorage.
 
 ## 🚀 Como Usar
 
-### 1. **Clonar ou fazer download dos arquivos**
-```bash
-git clone <seu-repo>
-cd portfolio
-```
-
 ### 2. **Abrir no navegador**
 - Abra `login.html` no navegador
 - Digite qualquer email
 - Clique em "Login"
 - Será redirecionado para o portfólio
 
-### 3. **Estrutura de Pastas (Importante)**
-Crie uma pasta `assets/` na mesma pasta dos arquivos HTML:
-```
-seu-projeto/
-├── login.html
-├── portfolio.html
-├── script.js
-├── style.css
-└── assets/
-    ├── 1772426236844.jpeg
-    └── Blue_particle_tech_abstract_art_background_2880x1800.jpg
-```
-
-## 🔐 Sistema de Autenticação
-
-- **Método**: localStorage
-- **Dados salvos**: Email do usuário
-- **Segurança**: Use HTTPS em produção
-- **Logout**: Clique no botão "Sair" no portfólio
 
 ## 📱 Responsividade
 
@@ -72,29 +47,11 @@ seu-projeto/
 - ✅ Tablet (768px - 1024px)
 - ✅ Desktop (> 1024px)
 
-## 🔧 Melhorias Implementadas
 
-✅ Remover CSS duplicado
-✅ Usar script.js externo em ambas páginas
-✅ Adicionar validações no formulário
-✅ Melhorar organização do código
-✅ Adicionar comentários explicativos
-✅ Melhorar responsividade
-✅ Adicionar DOMContentLoaded para segurança
+## 🌐 Deploy 
 
-## 🌐 Deploy (GitHub Pages)
-
-1. Fazer upload para repositório GitHub
-2. Ir em Settings → Pages
-3. Selecionar branch main
 4. Seu site estará em: [Etra aqui] : shttps://portfolio-two-chi-0bz4hyqdze.vercel.app/`](https://portfolio-two-chi-0bz4hyqdze.vercel.app
 
-## 📝 Notas Importantes
-
-- **Assets**: As imagens em `assets/` não estão incluídas. Adicione suas próprias.
-- **Email de Contato**: Atualize `gustavodouglasnunes@gmail.com` nos links de contato
-- **WhatsApp**: Atualize o número `5562999212773` nos links
-- **Redes Sociais**: Atualize os links do LinkedIn e GitHub
 
 ## 👨‍💻 Autor
 
@@ -104,11 +61,3 @@ Gustavo Douglas Nunes
 
 Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-### O que você pode fazer:
-✅ Usar comercialmente  
-✅ Modificar o código  
-✅ Distribuir  
-✅ Usar privativamente  
-
-### O que você deve fazer:
-📋 Incluir uma cópia da licença e aviso de copyright
