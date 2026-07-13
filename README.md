@@ -50,8 +50,7 @@ Portfólio pessoal responsivo com sistema de autenticação via localStorage.
 
 ## 🌐 Deploy 
 
-4. Seu site estará em: [Etra aqui] : shttps://portfolio-two-chi-0bz4hyqdze.vercel.app/`](https://portfolio-two-chi-0bz4hyqdze.vercel.app
-
+ [(https://portfolio-two-chi-0bz4hyqdze.vercel.app)]
 
 ## 👨‍💻 Autor
 
