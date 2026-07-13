@@ -50,7 +50,7 @@ Portfólio pessoal responsivo com sistema de autenticação via localStorage.
 
 ## 🌐 Deploy 
 
- [(https://portfolio-two-chi-0bz4hyqdze.vercel.app)]
+ [https://portfolio-two-chi-0bz4hyqdze.vercel.app]
 
 ## 👨‍💻 Autor
 
